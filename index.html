@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Coach</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Prompt Coach</h1>
+        <p>Build better prompts with guidance and structure.</p>
+    </header>
+
+    <main>
+        <section id="tips">
+            <h2>Prompting Tips</h2>
+            <ul>
+                <li>Provide a clear and concise description of your task.</li>
+                <li>Keep it conversational.</li>
+                <li>Write legibly.</li>
+                <li>Include details such as audience, tone, style, length.</li>
+                <li>Avoid slang, jargon, or informal language.</li>
+                <li>Use built-in prompts to get started.</li>
+            </ul>
+        </section>
+
+        <section id="builder">
+            <h2>Prompt Builder</h2>
+            <div class="form-group">
+                <label for="examples">Start with an example or saved prompt:</label>
+                <select id="examples">
+                    <option value="" selected>-- choose example --</option>
+                    <option value="summarize">Summarize a meeting</option>
+                    <option value="email">Draft a professional email</option>
+                    <option value="brainstorm">Brainstorm ideas</option>
+                </select>
+            </div>
+            <form id="promptForm">
+                <div class="form-group">
+                    <label for="goal">Goal (What response do you want?)</label>
+                    <textarea id="goal" rows="2" placeholder="Describe what you need from the AI"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="context">Context (Why do you need it and who is involved?)</label>
+                    <textarea id="context" rows="2" placeholder="Provide background or relevant details"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="source">Source (Which information or examples should AI use?)</label>
+                    <textarea id="source" rows="2" placeholder="Link to data or describe resources"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="expectations">Expectations (How should AI respond?)</label>
+                    <textarea id="expectations" rows="2" placeholder="Define formatting, tone, length, etc."></textarea>
+                </div>
+            </form>
+
+            <div id="preview">
+                <h3>Prompt Preview</h3>
+                <pre id="previewText"></pre>
+                <div class="button-group">
+                    <button id="copyBtn">Copy to clipboard</button>
+                    <button id="saveBtn">Save prompt</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* Basic reset and typography */
+body{
+    margin:0;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    background:#fdfdfd;
+    color:#333;
+    line-height:1.5;
+}
+header{
+    background:#4a90e2;
+    color:#fff;
+    padding:1rem;
+    text-align:center;
+}
+main{
+    display:flex;
+    flex-wrap:wrap;
+    padding:1rem 2rem;
+}
+section{
+    flex:1 1 300px;
+    margin:1rem;
+    background:#fff;
+    border-radius:4px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    padding:1rem;
+}
+#tips ul{
+    list-style-type:disc;
+    margin-left:1.2rem;
+}
+.form-group{
+    margin-bottom:1rem;
+}
+.form-group label{
+    display:block;
+    margin-bottom:0.3rem;
+    font-weight:bold;
+}
+textarea{
+    width:100%;
+    padding:0.5rem;
+    font-size:1rem;
+    border:1px solid #ccc;
+    border-radius:3px;
+    resize:vertical;
+}
+#preview{
+    margin-top:1rem;
+}
+#previewText{
+    background:#f4f4f4;
+    padding:1rem;
+    white-space:pre-wrap;
+    border:1px solid #ddd;
+    border-radius:3px;
+    min-height:100px;
+}
+#copyBtn{
+    margin-top:0.5rem;
+    padding:0.5rem 1rem;
+    background:#4a90e2;
+    color:#fff;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+}
+#copyBtn:hover{
+    background:#357ab8;
+}
+
+.button-group {
+    display:flex;
+    gap:0.5rem;
+}
+
+#saveBtn {
+    margin-top:0.5rem;
+    padding:0.5rem 1rem;
+    background:#28a745;
+    color:#fff;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+}
+#saveBtn:hover {
+    background:#218838;
+}
