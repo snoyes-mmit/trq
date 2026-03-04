@@ -9,7 +9,7 @@ templates, which are stored on the server using Node.js.
 1. **Install Node.js (version 14+)** if you haven't already.
 2. Open a terminal and change to the `prompt-coach` directory:
    ```bash
-   cd "c:\Users\snoyes\OneDrive - Norstella\Desktop\The-Right-Question\prompt-coach"
+   cd "c:\Users\~\The-Right-Question"
    ```
 3. Install dependencies:
    ```bash
@@ -37,7 +37,3 @@ the app.
 ## Extending
 
 You can add more example prompts by editing `script.js` or enhance server storage with a database.
-
----
-
-Created March 2026.
